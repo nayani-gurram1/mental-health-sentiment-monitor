@@ -1,8 +1,9 @@
-streamlit==1.32.0
-tensorflow==2.17.0
-numpy==1.26.4
-pandas==2.2.2
-matplotlib==3.8.4
+streamlit==1.28.2
+tensorflow-cpu==2.12.0
+numpy==1.23.5
+pandas==1.5.3
+matplotlib==3.7.1
 nltk==3.8.1
-scikit-learn==1.4.2
-h5py==3.11.0
+scikit-learn==1.2.2
+h5py==3.8.0
+protobuf==3.20.3
