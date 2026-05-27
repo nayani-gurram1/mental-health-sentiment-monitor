@@ -17,7 +17,7 @@ except LookupError:
 # -----------------------------
 # Load Saved Files
 # -----------------------------
-model = load_model("mental_health_model.h5")
+model = load_model("mental_health_rnn_model.keras")
 
 with open("tokenizer.pkl", "rb") as file:
     tokenizer = pickle.load(file)
