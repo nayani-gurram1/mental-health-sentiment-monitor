@@ -5,13 +5,15 @@ import re
 import string
 import matplotlib.pyplot as plt
 import pandas as pd
-from tensorflow.keras.models import load_model
-from tensorflow.keras.preprocessing.sequence import pad_sequences
+from keras.models import load_model
+from keras.preprocessing.sequence import pad_sequences
 import nltk
 from nltk.corpus import stopwords
 
-nltk.download('stopwords')
-
+try:
+    nltk.data.find("corpora/stopwords")
+except LookupError:
+    nltk.download("stopwords")
 # -----------------------------
 # Load Saved Files
 # -----------------------------
