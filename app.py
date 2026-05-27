@@ -5,8 +5,8 @@ import re
 import string
 import matplotlib.pyplot as plt
 import pandas as pd
-from keras.models import load_model
-from keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.models import load_model
+from tensorflow.keras.preprocessing.sequence import pad_sequences
 import nltk
 from nltk.corpus import stopwords
 
@@ -17,7 +17,7 @@ except LookupError:
 # -----------------------------
 # Load Saved Files
 # -----------------------------
-model = load_model("mental_health_model.h5")
+model = load_model("mental_health_rnn_model.keras")
 
 with open("tokenizer.pkl", "rb") as file:
     tokenizer = pickle.load(file)
